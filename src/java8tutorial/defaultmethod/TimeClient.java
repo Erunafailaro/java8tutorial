@@ -1,6 +1,9 @@
 package java8tutorial.defaultmethod;
 
+import java.time.DateTimeException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public interface TimeClient {
 	void setTime(int hour, int minute, int second);
@@ -12,19 +15,19 @@ public interface TimeClient {
 
 	LocalDateTime getLocalDateTime();
 
-	// ZonedDateTime getZonedDateTime(String zoneString);
+	//ZonedDateTime getZonedDateTime(String zoneString);
 
-	// static ZoneId getZoneId (String zoneString) {
-	// try {
-	// return ZoneId.of(zoneString);
-	// } catch (DateTimeException e) {
-	// System.err.println("Invalid time zone: " + zoneString +
-	// "; using default time zone instead.");
-	// return ZoneId.systemDefault();
-	// }
-	// }
+	 static ZoneId getZoneId (String zoneString) {
+	 try {
+	 return ZoneId.of(zoneString);
+	 } catch (DateTimeException e) {
+	 System.err.println("Invalid time zone: " + zoneString +
+	 "; using default time zone instead.");
+	 return ZoneId.systemDefault();
+	 }
+	 }
 
-	// default ZonedDateTime getZonedDateTime(String zoneString) {
-	// return ZonedDateTime.of(getLocalDateTime(), getZoneId(zoneString));
-	// }
+	default ZonedDateTime getZonedDateTime(String zoneString) {
+	return ZonedDateTime.of(getLocalDateTime(), getZoneId(zoneString));
+	}
 }
