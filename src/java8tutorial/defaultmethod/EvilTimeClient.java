@@ -2,7 +2,7 @@ package java8tutorial.defaultmethod;
 
 import java.time.LocalDateTime;
 
-public interface EviTimeClient {
+public interface EvilTimeClient {
 	void setTime(int hour, int minute, int second);
 
 	void setDate(int day, int month, int year);
