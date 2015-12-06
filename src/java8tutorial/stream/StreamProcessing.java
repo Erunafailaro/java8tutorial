@@ -1,6 +1,5 @@
 package java8tutorial.stream;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,11 +10,11 @@ public class StreamProcessing {
 
 	public static void main(String[] args) {
 		List<Person> persons = PersonGenerator.getPersons();
-		List<String> names = new ArrayList<String>();
-		persons.stream()
+		List<String> collect = persons.stream()
 				.filter(p -> p.getHeightInMeters().doubleValue() < 1.79d)
 				.sorted(Comparator.comparing(Person::getAge))
 				.map(Person::getFirstname).collect(Collectors.toList());
+		System.out.println(collect);
 	}
 
 }
