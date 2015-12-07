@@ -10,10 +10,13 @@ public class StreamProcessing {
 
 	public static void main(String[] args) {
 		List<Person> persons = PersonGenerator.getPersons();
-		List<String> collect = persons.stream()
-				.filter(p -> p.getHeightInMeters().doubleValue() < 1.79d)
-				.sorted(Comparator.comparing(Person::getAge))
-				.map(Person::getFirstname).collect(Collectors.toList());
+		List<String> collect = persons.stream() //
+				.filter(p -> p.getHeightInMeters().doubleValue() < 1.79d) //
+				.sorted(Comparator.comparing(Person::getAge)) // Person::getAge
+																// method
+																// reference
+				.map(Person::getFirstname) //
+				.collect(Collectors.toList());
 		System.out.println(collect);
 	}
 
