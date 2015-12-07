@@ -13,11 +13,19 @@ Dieses Code-Beispiel ist inspiriert durch das [Tutorial von Oracle](https://docs
 
 Die Java-Klassen hierzu liegen im Package [java8tutorial.defaultmethod](src/java8tutorial/defaultmethod).
 
-## &#955;-Ausdrücke
+## Lambda-(&#955;)-Ausdrücke
+
+### Suche in Collections
 
 Auch dieses Code-Beispiel ist durch ein [Tutorial von Oracle](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html "The Java Tutorials") inspiriert.
 
 Die Java-Klassen hierzu liegen im Package [java8tutorial.defaultmethod](src/java8tutorial/lambda/search).
+
+### Einsatz als Comparator
+
+&#955;-Ausdrücke lassen sich hervorragend als Comparator verwenden. [Dieses Tutorial](http://www.dreamsyssoft.com/java-8-lambda-tutorial/comparator-tutorial.php "Java 8 Lambda Expressions Tutorial") erläutert dies sehr gut. 
+
+Die Java-Klassen hierzu liegen im Package [java8tutorial.defaultmethod](src/java8tutorial/lambda/comparator).
 
 ## Pipelines und Streams
 
