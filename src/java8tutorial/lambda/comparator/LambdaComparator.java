@@ -13,6 +13,7 @@ public class LambdaComparator
     {
 
         sortWithClassicComparator();
+        sortWithLambda();
 
     }
 
@@ -36,6 +37,7 @@ public class LambdaComparator
     {
         List<Person> persons = PersonGenerator.getPersons();
         Collections.sort(persons, (Person o1, Person o2) -> o1.getFirstname().compareToIgnoreCase(o2.getFirstname()));
+        System.out.println(persons);
 
     }
 
