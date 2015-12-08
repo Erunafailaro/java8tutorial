@@ -33,6 +33,11 @@ Die Vorlage für dieses Beispiel kann in einem weiteren [Tutorial von Oracle](ht
 
 Die Java-Klassen hierzu liegen im Package [java8tutorial.stream](src/java8tutorial/stream).
 
+## Neue Date-Time API
+
+Auch ier empfehle ich wieder das hervorragende [Java-Tutorial von Oracle] (https://docs.oracle.com/javase/tutorial/datetime/overview/packages.html "Date-Time-API").
+
+Die Java-Klassen hierzu liegen im Package [java8tutorial.datetime](src/java8tutorial/datetime).
 
 
 
