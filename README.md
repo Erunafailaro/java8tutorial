@@ -29,7 +29,7 @@ Die Java-Klassen hierzu liegen im Package [java8tutorial.lambda.comparator](src/
 
 ## Pipelines und Streams
 
-Die Vorlage für dieses Beispiel kann in einem weiteren [Tutorial von Oracle](https://docs.oracle.com/javase/tutorial/collections/streams/ The Java Tutorials) eingesehen werden.
+Die Vorlage für dieses Beispiel kann in einem weiteren [Tutorial von Oracle](https://docs.oracle.com/javase/tutorial/collections/streams/ "The Java Tutorials") eingesehen werden.
 
 Die Java-Klassen hierzu liegen im Package [java8tutorial.stream](src/java8tutorial/stream).
 
