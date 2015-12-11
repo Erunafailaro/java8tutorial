@@ -77,6 +77,7 @@
 					<li>java.time.LocalDate, LocalTime, LocalDateTime</li>
 					<li>java.time.OffsetTime, OffsetDateTime</li>
 					<li>java.time.ZonedDateTime</li>
+					<li>java.time.temporal.TemporalAdjuster</li>
 				</ul>
 			</section>
 
@@ -93,17 +94,23 @@ LocalDate date = LocalDate.of(2000, Month.OCTOBER, 15);
 DayOfWeek dotw = date.getDayOfWeek();
  					</code>
 				</pre>
-				<p>LocalDate verwendet die neuen Streams.</p>
 			</section>
 
 			<section>
 				<h2>Streams</h2>
 				<blockquote
-					cite="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">“The
-				Java API designers are updating the API with a new abstraction
-				called Stream that lets you process data in a declarative way.
-				Furthermore, streams can leverage multi-core architectures without
-				you having to write a single line of multithread code.”</blockquote>
+					cite="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">&ldquo;The
+					Java API designers are updating the API with a new abstraction
+					called Stream that lets you process data in a declarative way.
+					Furthermore, streams can leverage multi-core architectures without
+					you having to write a single line of multithread code.&rdquo;</blockquote>
+				<p>
+					<a
+						href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">oracle.com/technetwork</a>
+				</p>
+				<p>
+					<small>übrigens: Streams &ne; java.io.*</small>
+				</p>
 			</section>
 
 			<section>
@@ -120,16 +127,20 @@ DayOfWeek dotw = date.getDayOfWeek();
 		
 		System.out.println(collect);
 	}
-	
 	</code>
 				</pre>
 			</section>
 
 			<section>
-			<h2>Streams</h2>
-			<p><img src="img/2179051.jpg" /></p>
-			<p><small>Quelle:
- <a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Oracle Technetwork</a></small></p>
+				<h2>Streams</h2>
+				<p>
+					<img src="img/2179051.jpg" />
+				</p>
+				<p>
+					<small>Quelle: <a
+						href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Oracle
+							Technetwork</a></small>
+				</p>
 			</section>
 			<section>
 				<h2>Lambda-Ausdr&uuml;cke</h2>
@@ -146,12 +157,19 @@ DayOfWeek dotw = date.getDayOfWeek();
 			</section>
 
 			<section>
+				<h2>Quellcode bei Github</h2>
+				<p>
+					<a href="https://github.com/Erunafailaro/java8tutorial">https://github.com/Erunafailaro/java8tutorial</a>
+				</p>
+			</section>
+			<section>
 				<h2>Java 7</h2>
 				<p>
 					<a
 						href="http://openbook.rheinwerk-verlag.de/java7/1507_01_001.html">Neuerungen
 						aus Java 7</a>
 				</p>
+			</section>
 		</div>
 
 	</div>
