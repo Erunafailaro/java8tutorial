@@ -39,7 +39,7 @@ public class PersonSearch
          * test() aus dem Inteface.
          */
         System.out.println("\n\n4 - Ansatz Lambda, einfach:");
-        printPersonsWithinAgeRange(PersonGenerator.getPersons(), (Person p) -> p.getAge() >= 50 && p.getAge() <= 100);
+        printPersonsWithinAgeRange(PersonGenerator.getPersons(), p -> p.getAge() >= 50 && p.getAge() <= 100);
 
         System.out.println("\n\n5 - Ansatz Lambda, mit Generics:");
         printPersonsWithPredicate(PersonGenerator.getPersons(), p -> p.getAge() >= 50 && p.getAge() <= 100);
@@ -48,9 +48,12 @@ public class PersonSearch
         processPersons(PersonGenerator.getPersons(), p -> p.getAge() >= 50 && p.getAge() <= 100, p -> p.print());
 
         System.out.println("\n\n7 - Ansatz Lambda, mit drei Generics:");
-        processPersonsWithFunction(PersonGenerator.getPersons(), p -> p.getAge() >= 50 && p.getAge() <= 100, //
-                                   p -> p.getHeightInMeters().toString(), //
-                                   heightInMeters -> System.out.println("Person ist " + heightInMeters + "m groß."));
+
+        Predicate<Person> tester = p -> p.getAge() >= 50 && p.getAge() <= 100;
+        Function<Person, String> mapper = p -> p.getHeightInMeters().toString();
+        Consumer<String> block = heightInMeters -> System.out.println("Person ist " + heightInMeters + "m groß.");
+
+        processPersonsWithFunction(PersonGenerator.getPersons(), tester, mapper, block);
     }
 
     /**
