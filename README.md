@@ -41,4 +41,8 @@ Auch ier empfehle ich wieder das hervorragende [Java-Tutorial von Oracle] (https
 Die Java-Klassen hierzu liegen im Package [java8tutorial.datetime](src/java8tutorial/datetime).
 
 
+## Änderungen
+Branch "Trunk"
+
+
 
